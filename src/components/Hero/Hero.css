@@ -1,0 +1,150 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 0px 0px whitesmoke;
+  border-radius: 50%;
+  height: 340px;
+  width: 340px;
+  margin: 50px 0px 30px 0px;
+}
+
+.profile-picture-background img {
+  height: 310px;
+  width: 310px;
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-picture-background:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+
+.hero h1 {
+  text-align: center;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloz-icon i {
+  color: white;
+  padding: 8px;
+  padding-left: 0;
+}
+.cloz-icon i:hover {
+  transform: scale(1.5);
+}
+.profile-details-name {
+  font-size: 30px;
+  font-family: "Poppins SemiBold";
+  margin-bottom: 0px;
+}
+
+.highlighted-text {
+  color: darkorange;
+}
+
+.profile-details-role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-details-role h1 {
+  font-size: 28px;
+  font-weight: 300;
+  font-family: cursive;
+  margin: 0px;
+}
+
+.profile-details-role span{
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.hero-connect {
+  padding: 12px 30px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 100.28%);
+  cursor: pointer;
+}
+
+.hero-resume {
+  color: white;
+  background-color: transparent;
+  padding: 15px 45px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.hero-connect:hover {
+  border: 2px solid #fff;
+}
+
+.hero-resume:hover {
+  border-color: #b415ff;
+}
+
+@media (max-width: 768px) {
+  .profile-picture {
+    height: 270px;
+    width: 270px;
+    margin: 30px 0px 20px 0px;
+  }
+
+  .profile-picture-background img {
+    height: 250px;
+    width: 250px;
+  }
+  .hero h1 {
+    margin-top: 40px;
+    width: 90%;
+    font-size: 50px;
+  }
+.profile-details-role h1 {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: cursive;
+  margin-bottom: 15px;
+  text-align: center;
+}
+  .hero-action {
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .hero-connect {
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+  .hero-resume {
+    padding: 20px 50px;
+    border-radius: 40px;
+  }
+}
